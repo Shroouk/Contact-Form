@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <title>contact form</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/fontawesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Krona+One|Lobster|Marko+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+</head>
+
+<body>
+  <!--///////////////////////// form ///////////////////////////////////-->
+
+
+ <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+   <div class="contact-form-tittle" style="background-image: url(img/bg2.jpg);">
+     
+    <h2 class="text-center">CONTACT US</h2>
+  </div>
+
+
+<!--/////////////////////// form inputs ///////////////////////////-->
+
+
+<div class="form-inputs">
+    <div class="form-group">
+      <label for="exampleInputexampleInputUsername">Username</label>
+      <i class="fas fa-user-circle fa-fw"></i>
+      <input type="text" name="username" class="form-control username" id="exampleInputUsername" placeholder="Type your username, more than 3 characters" >
+      <span class="asterisx">*</span>
+
+      <div class="u-rrors" id="uerror">
+
+     </div>
+     <div class="u-error"></div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <i class="fas fa-at fa-fw"></i>
+      <input type="email" class="form-control email" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="please type a valid Email">
+        <span class="asterisx">*</span>
+        <div class="e-error"></div>
+
+        <div class="e-rrors" id="uerror">
+
+       </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputexampleInputPhone">Cell phone</label>
+      <i class="fas fa-phone-alt fa-fw"></i>
+      <input type="text" class="form-control" name="phone" id="exampleInputPhone" placeholder="Enter your cell phone number" >
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email or phone number with anyone else.</small>
+
+
+    </div>
+
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember me </label>
+
+  </div>
+
+
+ <div class="txt">
+
+    <textarea class="form-control message" placeholder="Your Message !" name="message" ></textarea><br>
+
+
+
+      <div class="m-error"></div>
+
+      <button type="submit" class="btn btn-success" style="border-radius: 25px;"> Send message <i class="fas fa-paper-plane send-icon"></i> </button>
+
+</div>
+</div>
+</form>
+
+
+
+<!--//////////////// scripts /////////////////////////////-->
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js" ></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js" ></script>
+
+</body>
+</html>
